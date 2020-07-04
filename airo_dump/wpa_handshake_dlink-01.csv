@@ -1,0 +1,7 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+A0:AB:1B:CA:A8:EB, 2020-07-03 14:46:40, 2020-07-03 14:48:24,  1,  54, WPA2, CCMP,PSK, -18,      980,      155,   0.  0.  0.  0,   6, D-Link, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+7C:6B:9C:24:B2:37, 2020-07-03 14:46:40, 2020-07-03 14:48:24, -28,      582, A0:AB:1B:CA:A8:EB,
+

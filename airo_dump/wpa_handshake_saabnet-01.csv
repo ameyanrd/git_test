@@ -1,0 +1,10 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+0C:D2:B5:9A:BA:93, 2020-07-03 15:09:58, 2020-07-03 15:11:26,  8,  54, WPA2, CCMP TKIP,PSK, -49,      788,      116,   0.  0.  0.  0,   7, SAABNET, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+D4:25:8B:34:23:3A, 2020-07-03 15:09:58, 2020-07-03 15:11:26, -74,      117, 0C:D2:B5:9A:BA:93,
+18:F6:43:65:ED:2C, 2020-07-03 15:10:06, 2020-07-03 15:11:25, -68,       47, 0C:D2:B5:9A:BA:93,
+28:24:FF:89:40:44, 2020-07-03 15:09:59, 2020-07-03 15:11:24, -64,      485, 0C:D2:B5:9A:BA:93,
+6C:AB:31:4E:48:FE, 2020-07-03 15:10:02, 2020-07-03 15:11:26, -60,      139, 0C:D2:B5:9A:BA:93,
+
