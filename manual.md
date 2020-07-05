@@ -151,3 +151,22 @@ So how does it work?<br />
 Check the code at hstshijack/hstshijack.cap.
 There are the HSTS target networks we see and their replacements as above example. We can edit this as we want.
 So, if someone types `google.co.in` (`http`) and then types facebook, then all the facebook.com links are replaced by facebook.corn links which are not identified as links for HSTS but render you the same page. Please note that this method only works if the person goes through a search engine, where the script can replace the links. If he/she types on the url directly, the browser knows that it has to load the `https` website for it.
+
+##### DNS Spoofing
+
+Here, being the MITM, I will receive the DNS request from the client. So, instead of giving the client the authentic site, I can provide a site with malware and get all the details from the client.<br />
+We use `dns.spoof` module for this and redirect to our local website for a target website.<br />
+`set dns.spoof.all true` to reply to all DNS requests as MITM.<br />
+`set dns.spoof.domains <target>` to added the domains to spoof.<br />
+`dns.spoof on`<br />
+Now, all the requests to target domains will be replied with our localhost apache server.
+
+##### Injecting javscript
+
+This is done into `hstshijack/hstshijack.cap` file where we can add the javacript code file in front of `hstshijack.payloads` comma separated as `*:/root/penetration/alert.js`. This means all the website pages will be injected `alert.js`. This does not work on `HSTS` websites. But it can work via the partial hack of HSTS.
+
+##### Analysing using Wireshark
+
+1. First we enter bettercap with our regular command and execute the caplet hstshijack/hstshijack.
+2. Then in Wireshark, we can check all the POST login requests from target machine.
+3. We can include `set net.sniff.output /root/capturefile.cap` to create a capture of all the packets captured by bettercap.
